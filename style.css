@@ -1,0 +1,389 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.background {
+    background: rgba(0, 0, 0, 0.7) url('images/background.jpg');
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+.nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.txt {
+    font-size: 30px;
+    margin: 10px 25px;
+    color: white;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 40px;
+}
+
+.nav-list li {
+    list-style: none;
+    margin-top: 10px;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: white;
+    margin: 0px 18px;
+}
+
+.nm {
+    height: 90vh;
+}
+
+.maintext {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    flex-direction: column;
+}
+
+.text {
+    font-weight: bolder;
+    font-size: 90px;
+    color: white;
+    font-family: "Trirong", serif;
+    animation: blink 1.5s linear infinite;
+}
+
+.smtext {
+    margin-top: 0PX;
+    font-size: 30PX;
+    font-family: "Trirong", serif;
+    color: white;
+    animation: blink 1.5s linear infinite;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+
+    ;
+
+    50% {
+        opacity: .5;
+    }
+
+    ;
+
+    100% {
+        opacity: 1;
+    }
+
+    ;
+}
+
+.Welcome {
+    margin-top: -10px;
+    font-size: 20px;
+}
+
+.me {
+    text-align: center;
+    font-size: 50px;
+    margin: 25px;
+}
+
+.about {
+    display: flex;
+    margin: 60px;
+}
+
+.about img {
+    width: 400px;
+    height: 400px;
+}
+
+.matter {
+    margin: 44px 70px;
+}
+
+.main-matter {
+    display: flex;
+    margin-top: 35px;
+}
+
+.main-matter li {
+    margin: 7px;
+    font-size: 18px;
+}
+
+.extra {
+    margin-left: 40px;
+}
+
+.Contact {
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+    max-width: 700px;
+    margin: 10px 250px;
+}
+
+.Contact img {
+    margin-top: 50px;
+    width: 200px;
+    height: 200px;
+}
+
+.contbg {
+    background-color: rgba(235, 227, 182, 0.39);
+}
+
+.inputBox input {
+    width: 500px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    outline: none;
+    font-size: 1rem;
+    background-color: inherit;
+    margin: 15px 175px;
+    font-size: 20px;
+}
+
+.inputBox1 textarea {
+    margin: 15px 175px;
+    width: 521px;
+    height: 100px;
+    background-color: inherit;
+    border: 1px solid black;
+    border-radius: 5px;
+    outline: none;
+    font-size: 20px;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.inputBox span {
+    position: absolute;
+    left: 646px;
+    margin-top: 28px;
+    transition: 0.5s;
+    pointer-events: none;
+    text-transform: uppercase;
+}
+
+.inputBox1 span {
+    position: absolute;
+    left: 646px;
+    margin-top: 28px;
+    transition: 0.5s;
+    pointer-events: none;
+    text-transform: uppercase;
+}
+
+
+.inputBox input:valid~span,
+.inputBox input:focus~span {
+    transform: translateX(10px) translateY(-20px);
+    font-size: 1em;
+    background-color: beige;
+    padding: 0 10px;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+
+.inputBox1 textarea:valid~span,
+.inputBox1 textarea:focus~span {
+    transform: translateX(10px) translateY(-20px);
+    font-size: 1em;
+    background-color: beige;
+    padding: 0 10px;
+}
+
+.card {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    padding: 20px;
+    background-color: #d7efe966;
+    margin-right: 45px;
+}
+
+.card h2 {
+    font-size: 18px;
+    margin: 0;
+}
+
+.card p {
+    margin: 10px 0;
+}
+
+.card img {
+    width: 80%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.cimg img {
+    width: 110px;
+    margin-bottom: 30px;
+}
+
+.chimg {
+    width: 80%;
+    margin-left: 40px;
+}
+
+.chimg img {
+    margin-bottom: 40px;
+}
+
+.card1r {
+    display: flex;
+}
+
+.skills {
+    margin-left: 268px;
+}
+
+.card2 {
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.flaskimg {
+    width: 60%;
+    margin-left: 50px;
+}
+
+.dimg {
+    width: 70%;
+    margin-left: 50px;
+}
+
+.toggle_bar {
+    color: #fff;
+    display: none;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.droupdown_menu {
+    display: none;
+    position: absolute;
+    top: 4rem;
+    right: 60px;
+    list-style: none;
+    width: 150px;
+    background-color: rgba(81, 42, 7, 0.9);
+    height: 0;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.droupdown_menu.open {
+    height: 200px;
+}
+
+.droupdown_menu li {
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.droupdown_menu a {
+    text-decoration: none;
+    color: white;
+}
+
+@media (max-width: 772px) {
+    .nav-list {
+        display: none;
+    }
+
+    .toggle_bar {
+        display: block;
+        margin-right: 40px;
+    }
+
+    .droupdown_menu {
+        display: block;
+    }
+}
+
+@media (max-width: 736px) {
+    .text {
+        font-size: 70px;
+    }
+}
+
+@media (max-width: 554px) {
+    .text {
+        font-size: 50px;
+    }
+    .smtext {
+         font-size: 20px;
+    }
+}
+
+
+@media (max-width: 400px) {
+    .text {
+        font-size: 30px;
+    }
+    .smtext {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 1250px) {
+    .about {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 884px) {
+    .matter {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .main-matter {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+@media (max-width: 700px) {
+    .Welcome {
+        margin: 5px 0px;
+        margin-left: -60px;
+    }
+    .main-matter {
+        position: relative;
+        left: -90px;
+        width: 100%;
+    }
+
+    .main-matter li {
+        font-size: 15px;
+    }
+}
